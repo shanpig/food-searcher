@@ -1,0 +1,203 @@
+body {
+  background: url(../img/background.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.query-box {
+  margin-bottom: 30px;
+}
+
+input {
+  background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1)));
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+  border: none;
+  border-radius: 0 0 10px 10px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 100%;
+  font-size: 20pt;
+  color: #313131;
+  padding: 5px 10px;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+input::-webkit-input-placeholder {
+  color: #313131;
+}
+
+input:-ms-input-placeholder {
+  color: #313131;
+}
+
+input::-ms-input-placeholder {
+  color: #313131;
+}
+
+input::placeholder {
+  color: #313131;
+}
+
+input:focus {
+  background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1)));
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+}
+
+.output-box {
+  position: relative;
+}
+
+.chart-box {
+  margin-bottom: 10px;
+  width: 100%;
+  height: 35vh;
+  min-height: 250px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 15px 15px 0 0;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.chart-box > #chart {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.data-box {
+  width: 100%;
+  height: 80vh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 10px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  margin-bottom: 30px;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.data-box::-webkit-scrollbar {
+  background: transparent;
+}
+
+.data-box::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.data-box > .data-list {
+  padding: 10px;
+}
+
+.data-box > .data-list .data-list__item {
+  height: auto;
+  list-style-type: none;
+  margin-bottom: 20px;
+  color: black;
+  border: 1px solid black;
+  border-radius: 33px;
+  overflow: hidden;
+  font-weight: 500;
+  font-size: 18pt;
+  text-align: center;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.data-box > .data-list .data-list__item:hover .data-list__item-head, .data-box > .data-list .data-list__item:hover::after {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.data-box > .data-list .data-list__item .data-list__item-head {
+  padding: 5px 10px;
+  border-radius: 25px 25px 0 0;
+  background: rgba(255, 255, 255, 0.8);
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.data-box > .data-list .data-list__item .data-list__item-info {
+  -webkit-box-shadow: inset 0 8px 7px -4px black, inset 0 -8px 7px -4px black;
+          box-shadow: inset 0 8px 7px -4px black, inset 0 -8px 7px -4px black;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  margin: 0 auto;
+  width: 90%;
+  max-height: 100vh;
+  z-index: -1;
+  overflow: hidden;
+  font-size: 14pt;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+
+.data-box > .data-list .data-list__item .data-list__item-info.fold {
+  max-height: 0;
+}
+
+.data-box > .data-list .data-list__item .data-list__item-info table {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.data-box > .data-list .data-list__item .data-list__item-info th {
+  padding: 5px 10px;
+  font-size: 12pt;
+  font-weight: 100;
+}
+
+.data-box > .data-list .data-list__item .data-list__item-info td {
+  padding: 5px 10px;
+}
+
+.data-box > .data-list .data-list__item .data-list__item-info td:first-child {
+  text-align: left;
+}
+
+.data-box > .data-list .data-list__item .data-list__item-info td:last-child {
+  text-align: left;
+}
+
+.data-box > .data-list .data-list__item::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 15px;
+  border-radius: 0 0 25px 25px;
+  position: relative;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+footer {
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=App.css.map */
