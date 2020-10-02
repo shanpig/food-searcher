@@ -4,6 +4,7 @@ body {
   background: url(../img/background.jpg);
   height: 100vh;
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
 }
 
@@ -30,7 +31,7 @@ input {
   transition: 0.4s ease;
 
   &::placeholder {
-    color: #313131;
+    color: #918d8d;
   }
   &:focus {
     background: linear-gradient(to left, $cover-color, $cover-color);
@@ -65,7 +66,7 @@ input {
   overflow-y: scroll;
   scroll-behavior: smooth;
   color: white;
-  background-color: $cover-color;
+  background-color: rgba(0, 0, 0, 0.3);
   border: 10px solid rgba(255, 255, 255, 0.2);
   border-radius: 15px;
   margin-bottom: 30px;

@@ -18,7 +18,7 @@ const gatherNutrientData = function (foodNutrients, NUTRIENTS_NAME, NUTRIENTS_ID
   });
 
   // console.log("nutrientDict:\n", nutrientDict)
-  console.log('called')
+  // console.log('called')
   return nutrientDict;
 };
 

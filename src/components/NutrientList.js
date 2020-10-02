@@ -4,8 +4,8 @@ import { gatherNutrientData } from './NutrientProcessor'
 function NutrientList({ nutrientList }) {
   // Title of each nutrients
   const NUTRIENTS_NAME = [
-    'Energy', 'Protein', 'Tot. lipid (fat)', 'Sat. fatty acids',
-    'Tran. fatty acids', 'Carbohydrate', 'Sugar', 'Sodium']
+    'Energy', 'Protein', 'Tot. fat', 'Sat. fat',
+    'Tran. fat', 'Carb', 'Sugar', 'Sodium']
 
   // Id of each nutrients (according to usda)
   const NUTRIENTS_ID = [
