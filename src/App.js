@@ -32,9 +32,8 @@ function App() {
   return (
 
     <div className='App container-fluid'>
-      <div className="row">
-        <main className="col-12">
-          <div className="query-box col-lg-6 col-8">
+        <main className="row">
+          <div className="query-box col-lg-6 col-md-8 col-sm-10 col-12">
             <input
               type="text"
               id="query"
@@ -78,10 +77,10 @@ function App() {
             </div>
           </div>
         </main>
-        <footer className="col-12">
-          {String.fromCharCode(169)} 2020 edit by shanpig
+        <footer className="row">
+          <p className="col-12">{String.fromCharCode(169)} 2020 edit by shanpig
+          </p>
         </footer>
-      </div>
     </div >
   );
 }

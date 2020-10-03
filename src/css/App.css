@@ -1,6 +1,5 @@
 body {
   background: url(../img/background.jpg);
-  height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -21,6 +20,7 @@ main {
 
 .query-box {
   margin-bottom: 30px;
+  max-height: 10vh;
 }
 
 input {
@@ -63,6 +63,7 @@ input:focus {
 .output-box {
   position: relative;
   margin-top: 0;
+  max-height: 80vh;
 }
 
 .chart-box {
@@ -197,9 +198,10 @@ input:focus {
   background: rgba(255, 255, 255, 0.8);
 }
 
-footer {
+footer p {
   text-align: center;
   font-weight: 500;
-  margin-bottom: 10px;
+  margin-top: 10px;
+  max-height: 10vh;
 }
 /*# sourceMappingURL=App.css.map */
