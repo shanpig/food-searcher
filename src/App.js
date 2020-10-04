@@ -9,11 +9,12 @@ function App() {
   const [data, setData] = useState([])
   const pageSize = 10
   const key = "0SZt1LrnaarcT0ZcxTZ662ELwczfBaaxXSmU5PS7"
-  const url = `https://api.nal.usda.gov/fdc/v1/foods/search?query=${query}&api_key=${key}&pageSize=${pageSize}`
+  const url = `https://api.nal.usda.gov/fdc/v1/foods/search?query=${query.trim()}&api_key=${key}&pageSize=${pageSize}`
 
 
   function search(e) {
-    if (e.key === "Enter" && query.trim() !== "") {
+    if (query.trim() === "") return 
+    if (e.key === "Enter" || e.target.id==="query-btn") {
       fetch(url)
         .then(res => res.json(), rej => {
           console.log(rej.responseText())
@@ -37,11 +38,13 @@ function App() {
             <input
               type="text"
               id="query"
+              label="query"
               value={query}
               onChange={e => setQuery(e.target.value)}
               placeholder="Search food..."
               onKeyPress={search}
-            /></div>
+            />
+            <button id="query-btn" onClick={search}>Search</button></div>
           <div className="output-box col-lg-6 col-md-8 col-sm-10 col-12">
             <div className="data-box">
               <ul className="data-list">
