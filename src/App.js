@@ -53,12 +53,11 @@ function App() {
                     <p style={{
                       fontSize: "1.2em"
                     }}>
-                      This is food searcher.
-                      We provides nutrients data from USDA food central.
+                      Food Searcher provides nutrients data from USDA food central.
               
-                      Please search food by its english name.
+                      Please search food by its name, brand, or cooking style.
            
-                      ex: "salmon", "chicken breast", etc.
+                      e.g. salmon, chicken breast, etc.
                       </p>
                   </section>
                   :
