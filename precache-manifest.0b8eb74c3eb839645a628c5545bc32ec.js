@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "62ec901a77d7eefe18b55987dff0426e",
+    "revision": "42167227275c178dd6a6ef0c8f5ef8e6",
     "url": "/food-searcher/index.html"
   },
   {
-    "revision": "d40a73b2707fb1a4a6b5",
+    "revision": "5dd225293e4d69a9ec0b",
     "url": "/food-searcher/static/css/main.1da4ea3b.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/food-searcher/static/js/2.6b2af478.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d40a73b2707fb1a4a6b5",
-    "url": "/food-searcher/static/js/main.8a50d099.chunk.js"
+    "revision": "5dd225293e4d69a9ec0b",
+    "url": "/food-searcher/static/js/main.7b73413c.chunk.js"
   },
   {
     "revision": "82a6ab2aa75fbef1d837",
